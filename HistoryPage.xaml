@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Silberstadt.HistoryPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Geschichte von Freibergs"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level2" />
+            <Label
+                Text="Die Stadt, deren Geschichte eng mit dem Bergbau verbunden ist, entstand ab etwa um 1162/1170. Markgraf Otto von Meißen ließ zwischen 1156 und 1162 mehrere Waldhufendörfer für das Kloster Altzelle anlegen, darunter Christiansdorf. Im Jahre 1168 wurde bei Christiansdorf Silbererz entdeckt. Der Markgraf erwirkte daraufhin das Regalienrecht, um so über die in seinem Land vorhandenen, eigentlich dem königlichen Bergregal unterliegenden Bodenschätze selbst verfügen zu können. Die Zusicherung besonderer Freiheiten für die Bergleute, wie u. a. der Freiheit der Person und die Befreiung von verschiedenen Fronabgaben und -diensten, lockte zahlreiche Bergleute, Händler und Handwerker, samt ihren Familien ins Erzgebirge. Durch die Zuwanderungswelle entwickelte sich innerhalb von zwei Jahrzehnten die Stadt „Vriberge“ (1195), 1218 „Friberch“, 1227 im Stadtsiegel „Vriberch“ und 1328 „Fryberg“. 1466 werden erstmals die Bezeichnungen „Freiberg“ und „Freyberg“ verwendet. Dieser Name wird aus dem wichtigen Merkmal, der von Markgraf Otto eingeführte Berg(-bau)freiheit, also dem Schürfrecht eines jeden Zuwanderers, hergeleitet. Gegen eine entsprechende Abgabe durfte jeder nach dem Silbererz schürfen und konnte jeder eine Berechtigung zum Abbau erlangen. Das Silber durfte ausschließlich an die markgräfliche Münze verkauft werden. Im hohen Mittelalter war Freiberg die größte Stadt der Mark Meißen und wichtiger Handelsstandort. Ihr Silberreichtum und die bedeutsame Münzstatte machten das Kurfürstentum Sachsen zu einem wohlhabenden Staatswesen. Das berühmte Freiberger Stadt- und Bergrecht (ius Fribergensis), erstmals 1233 erwähnt, erlangte ab 1307 in schriftlicher Form große Bedeutung für das Erzgebirge. 1765 wurde die Bergakademie gegründet, eine der weltweit ältesten bergbautechnischen Hochschulen. "/>
+            <Button Text="Quelle: https://de.wikipedia.org/wiki/Freiberg" 
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                TextColor="Blue"
+                HorizontalOptions="Start"
+                Clicked="OnOpenWebLinkClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
