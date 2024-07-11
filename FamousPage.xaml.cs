@@ -8,7 +8,7 @@ public partial class FamousPage : ContentPage
         BindingContext = new PersonViewModel(DataListView, NameEntry, YearEntry);
     /*    persons = [
         new Person(){ Name="Gottfried Silbermann", Data="14.1.1683 Kleinbobritzsch – 4.8.1753 Dresden"},
-        new Person(){ Name="Abraham Gottlob Werner", Data=" 25.9.1749 Wehrau am Queis – 30.6.1817 Dresden"},
+        new Person(){ Name="Abraham Gottlob Werner", Data="25.9.1749 Wehrau am Queis – 30.6.1817 Dresden"},
         new Person(){ Name="Alexander von Humboldt", Data="1769 Berlin – 1859 Berlin"},
         new Person(){ Name="Clemens Winkler", Data="26.12.1838 Freiberg – 8.10.1904 Dresden"}];
         UpdateViewList();*/
@@ -18,7 +18,10 @@ public partial class FamousPage : ContentPage
             string name = NameEntry.Text;
             string data = YearEntry.Text;
             {
-                persons.Add(new Person { Name = name, Data = data });
+                //persons.Add(new Person { Name = name, Data = data });
+                //LINQ
+                Daten = Daten.Append(new Person { Name = name, Data = data }).ToList();
+
                 UpdateViewList();
 
             }
