@@ -18,5 +18,9 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new FamousPage());
     }
 
+    private async void OnWebsideClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new WebViewPage());
+    }
 }
 

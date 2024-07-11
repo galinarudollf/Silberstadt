@@ -8,12 +8,12 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="museum.png"
+                Source="freiberg.png"
                 HorizontalOptions="Fill"
                 Aspect="AspectFill"/>
             <Button
                 x:Name="HistoryBnt"
-                Text="Geschiche von Freiberg" 
+                Text="Geschichte" 
                 SemanticProperties.Hint="History"
                 Clicked="OnHistoryClicked"
                 HorizontalOptions="Fill" />
@@ -22,6 +22,12 @@
                 Text="Berühmte Persönlichkeiten" 
                 SemanticProperties.Hint="Famous people"
                 Clicked="OnFamousPeopleClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="WebSideBtn"
+                Text="Webseite von Freiberg" 
+                SemanticProperties.Hint="Web side"
+                Clicked="OnWebsideClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
