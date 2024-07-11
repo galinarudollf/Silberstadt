@@ -35,7 +35,10 @@ public class PersonViewModel : INotifyPropertyChanged{
             {
                 string name = entryName.Text;
                 string data = entryYears.Text;
-                Daten.Add(new Person { Name = name, Data = data });
+                //Daten.Add(new Person { Name = name, Data = data });
+                 //LINQ
+                Daten = Daten.Append(new Person { Name = name, Data = data }).ToList();
+
                 UpdateViewList();
                 entryName.Text = string.Empty;
                 entryYears.Text = string.Empty;
