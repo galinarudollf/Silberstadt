@@ -5,7 +5,7 @@
 
     <ScrollView>
         <StackLayout Padding="10">
-            <WebView HeightRequest="800" WidthRequest="400" Source="https://freiberg.de" />
+            <WebView HeightRequest="800" WidthRequest="400" Source="https://www.freiberg.de/" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
